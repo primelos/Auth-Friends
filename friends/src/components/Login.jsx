@@ -31,6 +31,11 @@ login = e => {
     .catch (err => console.log(err));
     
 };
+logout = e => {
+    e.preventDefault()
+    localStorage.clear()
+    this.props.history.push('/')
+}
     render() {
     return (
         <div>
@@ -54,6 +59,7 @@ login = e => {
                         
                 
                 <button>enter</button>
+                <button onClick={this.logout}>logout</button>
             </form>
 
         </div>

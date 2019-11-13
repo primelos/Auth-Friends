@@ -11,6 +11,8 @@ const Header = () => {
 
               <Link to='/protected'>Friends</Link>
 
+              <Link to='/protected/list'>Friends List</Link>
+
 
         </div>
     )
